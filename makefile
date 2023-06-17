@@ -6,5 +6,8 @@ directory and keeps asking until you come up with the right answer." >> README.m
 	echo "## Lines Of Code in the guessinggame.sh file" >> README.md
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 
+	echo "" >> README.md
+	echo "Date of Generation: $$(date)" >> README.md
+
 clean:
 	rm README.md
