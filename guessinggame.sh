@@ -2,8 +2,8 @@
 # File: guessinggame.sh
 
 function guess {
-    let answ=$(find . -maxdepth 1 -type f | wc -l)
-    let guess=answ-1
+    local answ=$(find . -maxdepth 1 -type f | wc -l)
+    local guess=answ-1
 
     while ((answ-guess != 0)) 
     do
